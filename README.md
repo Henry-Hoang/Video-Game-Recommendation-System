@@ -9,4 +9,4 @@ Folders `recommenders` and `tests` are from Microft. As one file may use inherit
 Notebooks I created:
 - `dataset2_prepare.ipynb`: pre-process the original dataset to get the same format as Amazon dataset (used by Microsoft).
 - `slirec_on_sampled_dataset 2.ipynb`: train and test model on a sampled dataset with 1.4M transactions.
-- `slirec_on_whole_dataset2.ipynb`: train and test model on the whole dataset with 5.2M transactions.
+- `slirec_on_whole_dataset2.ipynb`: train and test model on the whole dataset with 5.2M transactions. Note that there is no markdown in this notebook so please refer to markdowns in the sampled_dataset notebook when in doubt.
