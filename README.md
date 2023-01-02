@@ -1,4 +1,4 @@
-# Optimisation of a Video Game Recommendation System.
+# Optimisation of a Video Game Recommendation System
 
 This repository contains the code I re-implemented SLi-Rec model from [Microsoft](https://github.com/microsoft/recommenders/) for the NTU x Ubisoft EDGE Programme. 
 
