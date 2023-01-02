@@ -1,12 +1,11 @@
-## NTUxUbisoft EDGE Programme: Optimisation of a Video Game Recommendation System.
+# Optimisation of a Video Game Recommendation System.
 
-My work is based on the SLi_Rec model from [Microsoft](https://github.com/microsoft/recommenders/blob/main/examples/00_quick_start/sequential_recsys_amazondataset.ipynb)
+This repository contains the code I re-implemented SLi-Rec model from [Microsoft](https://github.com/microsoft/recommenders/) for the NTU x Ubisoft EDGE Programme. 
 
-Folders `recommenders` and `tests` are from Microft. As one file may use inherits from many other files, I do not remove any unused files and keep most of them unchanged except:
-- `recommenders/datasets/amazon_reviews.py`: this is for data processing part.
-- `recommenders/models/deeprec/config/sli_rec.yaml`: this .yaml file contains information of many hyperparameters for SLi_rec
+As the **[provided dataset]** from Ubisoft has some similar features with the Amazon Reviews dataset so I used:
+- `recommenders/datasets/amazon_reviews.py` for pre-processing the dataset
+- `recommenders/models/deeprec/config/sli_rec.yaml`: this configuration file contains information of many hyperparameters for SLi-Rec
 
-Notebooks I created:
-- `dataset2_prepare.ipynb`: pre-process the original dataset to get the same format as Amazon dataset (used by Microsoft).
-- `slirec_on_sampled_dataset 2.ipynb`: train and test model on a sampled dataset with 1.4M transactions.
-- `slirec_on_whole_dataset2.ipynb`: train and test model on the whole dataset with 5.2M transactions. Note that there is no markdown in this notebook so please refer to markdowns in the sampled_dataset notebook when in doubt.
+Notebooks:
+- `dataset_preparation.ipynb`: pre-process the **[provided dataset]** to get the exact format as Amazon dataset for applying the SLi-Rec easily.
+- `training_vs_evaluating_slirec.ipynb`: train and test model on the pre-processed **[provided dataset]** with 5.2M transactions. All of the markdown notes can be found inside this notebook.
